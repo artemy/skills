@@ -1,0 +1,14 @@
+{
+  "name": "artemy",
+  "owner": {
+    "name": "Artem Makarov"
+  },
+  "description": "Personal Claude skills.",
+  "plugins": [
+    {
+      "name": "artemy-skills",
+      "source": ".",
+      "description": "Personal collection of Claude skills."
+    }
+  ]
+}

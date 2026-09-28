@@ -9,7 +9,8 @@ Personal collection of Claude skills, packaged as a Claude Code plugin.
 skills/
 └── <SKILL-NAME>/    # one directory per skill
     ├── SKILL.md        # required: frontmatter (name, description) + instructions
-    └── scripts/        # optional helper scripts
+    ├── scripts/        # optional helper scripts
+    └── references/     # optional reference docs loaded on demand
 scripts/
 └── validate.py         # frontmatter checks for every skill
 ```
@@ -30,7 +31,7 @@ working copy — `claude plugin marketplace add /Some/working/dir/skills` —
 or skip the plugin machinery entirely and symlink a single skill:
 
 ```bash
-ln -s /Some/working/dir/skills/recipe-rewriter \
+ln -s /Some/working/dir/skills/skills/recipe-rewriter \
       ~/.claude/skills/recipe-rewriter
 ```
 
@@ -62,6 +63,7 @@ ln -s /Some/working/dir/skills/recipe-rewriter \
 | Skill | Description |
 |---|---|
 | `recipe-rewriter` | Rewrites recipes from any source into one compact Russian-language format: ingredients, numbered steps, notes, metric units, source link. |
+| `triz` | Resolves engineering/design trade-offs by mapping the contradiction to TRIZ inventive principles and generating concrete solution directions. WARNING: untested |
 
 ## License
 

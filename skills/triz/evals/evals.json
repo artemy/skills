@@ -1,0 +1,53 @@
+{
+  "skill_name": "triz",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We're building a delivery drone for 2 kg parcels. To get range past 15 km we keep adding battery, but every extra cell adds weight that eats most of the range gain and pushes us over the 4 kg class limit. Give me ideas to break out of this.",
+      "expected_output": "Technical contradiction stated in TRIZ form, mapped to parameters, matrix cells from lookup.py, 3-4 principles turned into concrete drone-specific ideas, recommendation.",
+      "files": [],
+      "assertions": [
+        "States the contradiction in the form 'When we improve [A], [B] gets worse'",
+        "Includes an Ideal Final Result (IFR) reframe",
+        "Ran lookup.py (lookup_output.txt is not 'none') and every principle number attributed to the matrix appears in lookup_output.txt",
+        "Develops at most 4 Inventive Principles / separation routes in detail",
+        "Every presented principle has at least one concrete idea specific to the user's product (names a mechanism, component, material or architecture)",
+        "Ends with a recommendation of which direction to pursue first",
+        "response.md is under 1200 words",
+        "Maps the worsening side to parameter #1 Weight of moving object"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Our API gateway does full JWT signature verification plus a call to our authz service on every request. Security won't relax it, but p99 is 180 ms and product wants it under 50 ms. How do we get out of this?",
+      "expected_output": "Security vs latency contradiction mapped via software table (9/25 vs 30), matrix lookup, concrete gateway/auth architecture ideas.",
+      "files": [],
+      "assertions": [
+        "States the contradiction in the form 'When we improve [A], [B] gets worse'",
+        "Includes an Ideal Final Result (IFR) reframe",
+        "Ran lookup.py (lookup_output.txt is not 'none') and every principle number attributed to the matrix appears in lookup_output.txt",
+        "Develops at most 4 Inventive Principles / separation routes in detail",
+        "Every presented principle has at least one concrete idea specific to the user's product (names a mechanism, component, material or architecture)",
+        "Ends with a recommendation of which direction to pursue first",
+        "response.md is under 1200 words",
+        "Maps the security side to parameter #30 (object-affected harmful factors) and latency to #9 Speed or #25 Loss of time"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Designing a rugged phone case: it needs thick, soft walls to survive 2 m drops, but it has to be thin enough to slide into jeans pockets and not block MagSafe charging. Brainstorm directions.",
+      "expected_output": "Recognized as physical contradiction (thickness must be large and small), resolved with separation principles (time/space/condition/scale), concrete case designs.",
+      "files": [],
+      "assertions": [
+        "States the contradiction in the form 'When we improve [A], [B] gets worse'",
+        "Includes an Ideal Final Result (IFR) reframe",
+        "Ran lookup.py (lookup_output.txt is not 'none') and every principle number attributed to the matrix appears in lookup_output.txt",
+        "Develops at most 4 Inventive Principles / separation routes in detail",
+        "Every presented principle has at least one concrete idea specific to the user's product (names a mechanism, component, material or architecture)",
+        "Ends with a recommendation of which direction to pursue first",
+        "response.md is under 1200 words",
+        "Identifies a physical contradiction and applies at least one named separation route (time, space, condition, or scale)"
+      ]
+    }
+  ]
+}

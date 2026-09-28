@@ -28,10 +28,10 @@ PARAMETERS = {
     24: "Loss of information", 25: "Loss of time",
     26: "Quantity of substance/matter", 27: "Reliability",
     28: "Measurement accuracy", 29: "Manufacturing precision",
-    30: "Harmful effects on object", 31: "Harmful side effects",
+    30: "Object-affected harmful factors", 31: "Object-generated harmful factors",
     32: "Ease of manufacture", 33: "Ease of operation", 34: "Ease of repair",
     35: "Adaptability / versatility", 36: "Device complexity",
-    37: "Difficulty of detecting", 38: "Extent of automation", 39: "Productivity",
+    37: "Difficulty of detecting and measuring", 38: "Extent of automation", 39: "Productivity",
 }
 
 PRINCIPLES = {
@@ -71,7 +71,8 @@ def main() -> int:
         os.path.dirname(os.path.abspath(__file__)),
         "..", "references", "contradiction-matrix.json",
     )
-    matrix = json.load(open(matrix_path))["matrix"]
+    with open(matrix_path) as f:
+        matrix = json.load(f)["matrix"]
 
     for improving, worsening in zip(nums[::2], nums[1::2]):
         header = (

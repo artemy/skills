@@ -1,6 +1,6 @@
 # TRIZ 40 Inventive Principles
 
-Each principle is a generalized solution strategy. When applying them, always translate the abstract principle into concrete ideas for the user's specific domain.
+Each principle is a generalized solution strategy.
 
 ---
 
@@ -84,7 +84,7 @@ Compensate for the relatively low reliability of an object by preparing emergenc
 ## 12. Equipotentiality
 Change the operating conditions so that an object need not be raised or lowered; eliminate the need to change potential energy.
 
-*Examples: adjustable-height workbenches; car pit in garage; lock-free data structures*
+*Examples: adjustable-height workbenches; car pit in garage; canal locks instead of lifting ships*
 
 ---
 
@@ -126,7 +126,7 @@ Move objects in two- or three-dimensional space; use multi-layered arrangements;
 ## 18. Mechanical vibration
 Cause an object to oscillate or vibrate; increase frequency (up to ultrasonic); use resonance frequency; use piezoelectric vibration.
 
-*Examples: ultrasonic cleaning; vibrating concrete during pouring; noise-canceling headphones*
+*Examples: ultrasonic cleaning; vibrating concrete during pouring; vibratory bowl feeders orienting parts*
 
 ---
 
@@ -187,7 +187,7 @@ Use simpler, inexpensive copies instead of expensive or fragile originals; repla
 ---
 
 ## 27. Cheap short-living (Disposable)
-Replace an inexpensive object with less expensive ones (sacrificing some quality); use disposable items to avoid cost of cleaning or repair.
+Replace an expensive object with multiple cheap ones, compromising certain qualities (such as service life); use disposable items to avoid the cost of cleaning or repair.
 
 *Examples: disposable medical instruments; single-use packaging; throwaway prototypes*
 

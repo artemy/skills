@@ -38,7 +38,7 @@ Each separation route is typically implemented with a cluster of the 40 Inventiv
 
 - **Time** → 10 Preliminary action, 11 Beforehand cushioning, 15 Dynamics, 19 Periodic action, 34 Discarding & recovering
 - **Space** → 1 Segmentation, 2 Taking out, 3 Local quality, 4 Asymmetry, 17 Another dimension
-- **Condition** → 32 Color changes, 35 Parameter changes, 36 Phase transitions, 28 Mechanics substitution
+- **Condition** → 32 Color changes, 35 Parameter changes, 36 Phase transitions, 31 Porous materials
 - **Scale** → 1 Segmentation, 5 Merging, 33 Homogeneity, 40 Composite materials
 
 Present the separation route first ("the wing can be large *in flight* and small *on deck* — separation in time"), then use the associated principles to generate the concrete mechanisms.
